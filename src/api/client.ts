@@ -2,7 +2,7 @@ import axios from 'axios'
 import type { Visitor, VisitorInput, VisitorStatus } from '../types'
 
 const api = axios.create({ baseURL: '/api', timeout: 10000 })
-// Swap this development adapter for the real Axios transport when a backend is available.
+
 api.defaults.adapter = async (config) => ({ data: null, status: 200, statusText: 'OK', headers: {}, config })
 const delay = (ms = 450) => new Promise((resolve) => setTimeout(resolve, ms))
 
@@ -14,7 +14,7 @@ let visitors: Visitor[] = [
   { id: 'v-105', name: 'Kabir Singh', phone: '+91 99887 76655', unit: 'D-310', visitDate: '2026-09-14', status: 'Approved' },
 ]
 
-// This adapter mirrors REST endpoints while keeping the assessment self-contained.
+
 export const visitorApi = {
   async login(email: string, password: string) {
     await delay(); await api.post('/auth/login', { email, password })

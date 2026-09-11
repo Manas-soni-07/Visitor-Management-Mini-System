@@ -19,7 +19,6 @@ If you are developing a production application, we recommend using TypeScript wi
 <!-- --------------------------------------------------------------------------------------------- -->
 
 
-
   Isme ye screens/features hain:
 
   - Login page   //     isse login hoga Email:- admin@haven.com  password:- admin@haven.com / visitor123
@@ -72,5 +71,4 @@ If you are developing a production application, we recommend using TypeScript wi
 
   npm run dev
 
- 
- 
+ live link : https://visitormanagementminisystem.vercel.app/ 
